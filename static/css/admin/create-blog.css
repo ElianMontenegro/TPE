@@ -1,0 +1,113 @@
+@media only screen and (min-width:300px){
+
+    body {
+        width: 100%;
+        height: auto; 
+    }
+
+
+    main {
+        width: 100%;
+        min-height: 80vh;
+        padding-top: 70px;
+        height: auto;
+        background-color: #181A1E;
+    }
+
+    main .form-blog {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px;
+    }
+
+    main .form-blog form{
+        width: 330px;
+        min-height: 700px;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: rgba(1, 1,1, 0.1);
+        border-radius: 10px;
+        backdrop-filter: blur(12px);
+        display: flex;
+        padding: 0px 10px;
+        
+
+    }
+
+    main .form-blog form input[type="text"] {
+        padding-left: 10px;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--main-color);
+        box-shadow: 0 2px 3px -2px var(--main-color);
+       
+    }
+    main .form-blog form .options {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 60px;
+    }
+    main .form-blog form .options .cover-options,
+    main .form-blog form .options .public-options{
+        height: 60px;
+        width: 50px;
+
+    }
+    main .form-blog form .options .option1,
+    main .form-blog form .options .option2 {
+        display: flex;
+        margin-top: 2px;
+        width: 80px;
+        justify-content: flex-start;
+        height: 20px;
+    }
+    main .form-blog form .options .option1 input[type="radio"],
+    main .form-blog form .options .option2 input[type="radio"] {
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+        box-shadow: none;
+    }
+
+    main .form-blog form input::placeholder ,
+    main .form-blog form textarea::placeholder {
+        color: #fff;
+    }
+
+    main .form-blog form textarea {
+        padding-left: 10px;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--main-color);
+        color: #fff;
+    }
+    main .form-blog form .container-button {
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .form-blog form  button {
+        width: 60%;
+        height: 100%;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        border: none;
+    }
+    main .form-blog form button:hover {
+        background-color: var(--main-color);
+        box-shadow: 0 0 15px var(--main-color),0 0 40px var(--main-color),0 0 80px var(--main-color); 
+    }
+
+
+}

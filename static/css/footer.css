@@ -1,0 +1,101 @@
+@media only screen and (min-width:300px){
+
+footer {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: var(--main-color);
+}
+
+footer .footer-logo {
+    height: 133px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-logo .logo-part1 {
+    height: auto;
+    width: 100px;
+}
+
+footer .footer-logo .logo-part2 {
+    height: auto;
+    width: 60px;
+}
+
+footer .footer-form {
+    height: 133px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .footer-form .form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center
+}
+
+footer .footer-form .form form input {
+    width: 65%;
+    height: 50px;
+    background-color: transparent;
+    padding-left: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+
+footer .footer-form .form form button {
+    width: 15%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-form .social {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer .footer-form .social i {
+    color: black;
+    font-size:18px;
+}
+
+footer .footer-copyright {
+    height: 133px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+@media only screen and (min-width:400px){
+  
+    footer .footer-form {
+        align-items: center;
+    }
+    
+    footer .footer-form .form form{
+        width: 400px;
+        
+    }
+
+    footer .footer-form .social{
+        width: 400px;
+    }
+    
+}

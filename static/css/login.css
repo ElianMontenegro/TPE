@@ -1,0 +1,45 @@
+@media only screen and (min-width:300px){
+
+    main {
+        width: 100%;
+        min-height: 100vh;
+        padding: 70px 0px;
+        height: auto;
+        background-color: #181A1E;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+    main form {
+        width: 330px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    main form input {
+        height: 40px;
+        border: 1px solid var(--main-color);
+        background-color: transparent;
+        padding-left: 10px;
+    }
+
+    main form button {
+        height: 40px;
+        width: 50%;
+        border: 1px solid var(--main-color);
+        background-color: transparent;
+        padding-left: 10px;
+    }
+
+
+}

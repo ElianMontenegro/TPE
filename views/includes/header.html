@@ -1,0 +1,38 @@
+
+<header class="header">
+    <div class="logo-header">
+        <a href="<?php echo constant('URL'); ?>" class="logo-container">
+            <div class="logo-part">
+                <img src="<?php echo constant('URL'); ?>/static/img/cali.png" alt="">
+            </div>
+            <div class="logo">
+                <div class="circle">
+                    <img src="<?php echo constant('URL'); ?>/static/img/s.png" alt="">
+                </div>
+            </div>
+            
+        </a>
+    </div>
+    <div class="hamburger-header">
+        <div class="hamburger"></div>
+    </div>
+
+</header>
+<nav class="navegation">
+    <ul class="navegation-ul">
+        <li class="navegation-li"><a href="<?php echo constant('URL'); ?>login" >Login</a></li>
+        <li class="navegation-li"><a href="<?php echo constant('URL'); ?>signup" >signup</a></li>
+        <li class="navegation-li-open">
+            <div class="navegation-li-arrow">
+                <h3><i id="arrow" class="fas fa-chevron-down"></i></h3>
+                <a href="#">Categories</a>
+            </div>
+            <ul class="sub-menu">
+                <li class="sub-menu-item"><a href="<?php echo constant('URL'); ?>categoryBlog?id=4">routines</a></li>
+                <li class="sub-menu-item"><a href="<?php echo constant('URL'); ?>categoryBlog?id=8">Execise</a></li>
+                <li class="sub-menu-item"><a href="<?php echo constant('URL'); ?>categoryBlog?id=9">Healthy</a></li>
+            </ul>
+        </li>
+        <li class="navegation-li"><a href="">About Me</a></li>
+    </ul>
+</nav>

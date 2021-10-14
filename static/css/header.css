@@ -1,0 +1,180 @@
+@media only screen and (min-width:300px){
+    header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        background-color: var(--main-color);
+        position: fixed;
+        z-index: 9;
+    }
+
+    header .logo-header {
+        width: 80%;
+        height: auto;
+    
+    }
+    header .logo-container {
+        width: auto;
+        position: absolute;
+        display: flex;
+        top: 45%;
+        left: 30%;
+        z-index: 19;
+    }
+
+    header .logo-container .logo-part {
+        height: 45px;
+        width: 100px;
+    }
+
+    header .logo-container .logo-part img{
+        width: 95%;
+        height: 90%;
+        object-fit: cover;
+    }
+    header .logo-container .logo {
+        height: 45px;
+        width: 45px;
+        z-index: 19;
+    }
+
+    header .logo-container .logo img {
+        width: 95%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    header  .logo-container .circle {
+        height: 45px;
+        width: 45px;
+        border-radius: 100%;
+        z-index: 9;
+        background-color: var(--main-color);
+    }
+
+    header .hamburger-header {
+        width: 20%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s ease-in-out;
+    }
+
+    header .hamburger-header .hamburger {
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 30%;
+        transition: all .5s ease-in-out;
+    }
+
+    header .hamburger-header .hamburger::before,
+    header .hamburger-header .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 30%;
+        transition: all .5s ease-in-out;
+    }
+
+    header .hamburger-header .hamburger::before {
+        transform: translateY(-6px);
+    }
+    header .hamburger-header .hamburger::after {
+        transform: translateY(6px);
+    }
+
+    /* animation */
+
+    header .hamburger-header.open .hamburger {
+        transform: translateX(-10px);
+        background-color: transparent;
+    }
+
+    header .hamburger-header.open .hamburger::before {
+        transform: rotate(45deg) translate(5px, -5px);
+    }
+
+    header .hamburger-header.open .hamburger::after {
+        transform: rotate(-45deg) translate(5px, 5px);
+    }
+
+    /* nav */
+
+    .navegation {
+        width: 100%;
+        height: auto;
+        background-color: #181A1E;
+        transform: translateY(-300px);
+        top: 70px;
+        z-index: 8;
+        position: fixed;
+        visibility: hidden;
+    }
+
+    .navegation .navegation-ul {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navegation .navegation-ul .navegation-li{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .navegation .navegation-ul .navegation-li-open {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 20px;
+        overflow: hidden;
+        transition:  .4s cubic-bezier(.39, .575, .565, 1),height .4s cubic-bezier(.39, .575, .565, 1);
+    }
+    .navegation .navegation-ul .navegation-li-open .navegation-li-arrow {
+        display: flex;
+        height: 50px;
+        align-items: center;
+
+    }
+    .navegation .navegation-ul .navegation-li-open .navegation-li-arrow h3{
+        display: flex;
+        height: 50px;
+        align-items: center;
+    }
+    .navegation .navegation-ul .navegation-li-open .navegation-li-arrow i{
+        margin-right: 5px;
+    }
+    .navegation .navegation-ul .navegation-li-open .sub-menu {
+        display: flex;
+        height: auto;
+        width: 100px;
+        flex-direction: column;
+    }
+    .navegation .navegation-ul .navegation-li-open .sub-menu .sub-menu-item {
+        color: white;
+        font-size: 13px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+}
